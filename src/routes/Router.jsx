@@ -1,16 +1,19 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/HomePage/Index";
 import AllProjects from "../pages/Projects/components/AllProjects";
-import About from "../pages/About/About";
+import About from "../pages/HomePage/About/About";
+import MoreAbout from "../pages/HomePage/About/MoreAbout";
 
 const Router = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />}>
-        <Route path="/allprojects" element={<AllProjects />} />
+    
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/all-projects" element={<AllProjects />} />
         <Route path="/about" element={<About />} />
-      </Route>
-    </Routes>
+        <Route path="/more-about" element={<MoreAbout />} />
+      </Routes>
+    
   );
 };
 

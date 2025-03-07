@@ -8,11 +8,13 @@ const Projects = () => {
       <Cards />
       <div className="flex justify-center">
         <Link
-          to="/allprojects"
+          to={"/all-projects"}
           className="w-50 py-2 text-center font-semibold text-xl border-2 border-gray-400 rounded-full"
         >
           Ver mais projetos
         </Link>
+
+        {/* <a href="https://github.com/ErickSouza94?tab=repositories" target="_blank" className="w-50 py-2 text-center font-semibold text-xl border-2 border-gray-400 rounded-full">Ver mais projetos</a> */}
       </div>
     </section>
   );

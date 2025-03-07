@@ -43,4 +43,4 @@ const AllProjects = () => {
   )
 }
 
-export default AllProjects
+export default AllProjects;

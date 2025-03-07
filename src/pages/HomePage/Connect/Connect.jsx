@@ -8,11 +8,16 @@ const handleFormSubmit = (data) => {
 
 const Connect = () => {
   return (
-    <div className="flex justify-around md:gap-25 lg:gap-10 py-40 lg:h-[800px] border-b border-gray-400">
+    <div className="flex flex-col md:flex-row justify-around md:gap-25 lg:gap-10 py-40 lg:h-[800px] border-b border-gray-400">
       <div className="text-3xl pt-5 px-30">
         <h1 className="font-bold">Entre em contato</h1>
-        <p className="text-lg">Email: erick.ssouza94@gmail.com</p>
-        <p className="text-lg">Para mais informações, aqui meu currículo.</p>
+        <p className="text-lg">Email: <a href="mailto:erick.ssouza94@gmail.com"
+        className="hover:text-blue-700 transform hover:scale-105 transition duration-300">erick.ssouza94@gmail.com</a></p>
+        <p className="text-lg">Para mais informações, aqui <a href="/cv-europass-dev.pdf"
+        download={"Erick_Souza_Dev_Resume.pdf"}
+        className="hover:text-blue-700 transform hover:scale-105 transition duration-300"
+        >meu currículo</a>.
+        </p>
 
         <div className="flex flex-col">
           <div className="pt-10 flex gap-5 text-center justify-start">
@@ -30,7 +35,7 @@ const Connect = () => {
         </div>
       </div>
 
-      <div className="px-6 w-[500px] pt-20 pb-25"><Forms
+      <div className="px-6 md:w-[600px] pt-20 pb-25 "><Forms
       initialData={{name: "", email: "", subject: "", message: "" }}
       onSubmit={handleFormSubmit}/>
       </div>
