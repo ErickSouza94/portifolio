@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
+  
   return (
-    <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 py-40 p-4 lg:h-[800px] border-b border-gray-400">
-      <div className="text-3xl pt-5 px-40">
+    <div className="flex flex-col items-center justify-between md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
+      <div className="text-3xl pt-5 px-30">
         <h1 className="text-2xl font-bold">Sobre mim</h1>
       </div>
 
@@ -15,11 +17,12 @@ const About = () => {
           experiência na criação de interfaces modernas e dinâmicas com
           React.js, JavaScript (ES6+), NextJs, HTML, CSS e Bootstrap e Tailwind.
         </p>
-        <Link
-        to={"/more-about"}
-        className="hover:text-[#D3E97A] hover:underline transition-colors duration-200">
-       Mais sobre mim
-        </Link>
+        <button
+          className="hover:text-[#D3E97A] hover:underline transition-colors duration-200"
+          onClick={() => navigate("/more-about")}
+        >
+          Mais sobre mim
+        </button>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import Forms from "./Forms";
+import Forms from "./components/Forms";
 
 const handleFormSubmit = (data) => {
     console.log("Dados enviados:", data)
@@ -8,7 +8,7 @@ const handleFormSubmit = (data) => {
 
 const Connect = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-around md:gap-25 lg:gap-10 py-40 lg:h-[800px] border-b border-gray-400">
+    <div className="flex flex-col items-center justify-between md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
       <div className="text-3xl pt-5 px-30">
         <h1 className="font-bold">Entre em contato</h1>
         <p className="text-lg">Email: <a href="mailto:erick.ssouza94@gmail.com"
@@ -23,13 +23,15 @@ const Connect = () => {
           <div className="pt-10 flex gap-5 text-center justify-start">
             <FaLinkedinIn className="text-[#D3E97A] bg-black" />{" "}
             <span className="items-center text-center text-lg">
-              <a href="">Linkedin</a>
+              <a href="https://www.linkedin.com/in/ericksouza94/"
+              target="_blank">Linkedin</a>
             </span>
           </div>
           <div className="pt-10 flex gap-5 text-center justify-start">
             <FaGithub className="text-[#D3E97A] bg-black" />{" "}
             <span className="items-center text-center text-lg">
-              <a href="">GitHub</a>
+              <a href="https://github.com/ErickSouza94"
+              target="_blank">GitHub</a>
             </span>
           </div>
         </div>

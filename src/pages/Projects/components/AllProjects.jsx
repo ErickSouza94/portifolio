@@ -11,7 +11,9 @@ const AllProjects = () => {
                 if (!res.ok) throw new Error(`Erro: ${res.status}`)
 
                 const data = await res.json()
-                setRepos(data);
+
+                const sortedRepos = data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+                setRepos(sortedRepos);
             } catch (e) {
                 setError(e.message)
             }
@@ -24,7 +26,7 @@ const AllProjects = () => {
 
   return (
     <div className="p-4">
-        <h2>Meus Repositórios</h2>
+        <h2 className="font-semibold pb-10 flex justify-center text-3xl">Meus Repositórios</h2>
         {error && <p className="text-red-500">{error}</p>}
         <ul className="space-y-4">
             {repos.map((repo) => (

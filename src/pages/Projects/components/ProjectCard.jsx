@@ -9,7 +9,7 @@ const ProjectCard = ({
   githubLink,
 }) => {
   return (
-    <div className="flex flex-col md:flex-row items-center  md:justify-center md:gap-x-[40px] lg:gap-[400px] px-20 sm:px-10 py-5 pb-20 border-b border-gray-400">
+    <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
       <div>
         <img
           src={image}
@@ -18,7 +18,7 @@ const ProjectCard = ({
         />
       </div>
       {/* Conteúdo do projeto */}
-      <div className="mt-4 md:mt-0">
+      <div className="mt-4 md:mt-0 w-[450px]">
         <h3 className="text-xl font-bold">{title}</h3>
         <p className="text-md mt-2 opacity-60">{description}</p>
         <div className="mt-4 text-lg">
