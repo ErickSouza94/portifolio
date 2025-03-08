@@ -7,7 +7,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="global pt-[100px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="flex justify-between items-center gap-50 h-[700px] w-[100%] main pb-20 border-b-3 border-gray-500">
+      <div className="flex justify-around items-center gap-50 h-[700px] w-[100%] main pb-20 border-b-3 border-gray-500">
         <div className="w-auto text-3xl lado-esquerdo">
           <h1 className="font-bold">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA

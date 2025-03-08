@@ -1,6 +1,7 @@
 import Connect from "../../Connect/Connect";
 import Capabilites from "./Capabilites";
 import Experience from "./Experience";
+import Formation from "./Formation";
 import MoreAboutTop from "./MoreAboutTop";
 
 const MoreAbout = () => {
@@ -9,6 +10,7 @@ const MoreAbout = () => {
       <MoreAboutTop />
       <Capabilites />
       <Experience />
+      <Formation/>
       <Connect />
     </div>
   );

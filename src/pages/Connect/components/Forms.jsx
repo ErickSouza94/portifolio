@@ -17,9 +17,9 @@ const Form = ({ initialData, onSubmit }) => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-5 bg-neutral-950 text-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">Entre em Contato</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
+    <div className="max-w-md mx-auto p-5 bg-neutral-950 text-white rounded-lg shadow-lg w-[600px] h-[500px] flex flex-col justify-center">
+      <h2 className="text-4xl font-bold mb-10 text-center">Me envie um email</h2>
+      <form onSubmit={handleSubmit} className="space-y-4 ">
         <input
           type="text"
           name="name"
@@ -56,12 +56,14 @@ const Form = ({ initialData, onSubmit }) => {
           className="w-full p-2 border rounded bg-neutral-800 border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
           required
         ></textarea>
-        <button
-          type="submit"
-          className="w-full p-2 bg-[#D3E97A] hover:bg-emerald-50 text-gray-800 font-bold rounded transition"
-        >
-          Enviar
-        </button>
+        <div className="pt-5">
+          <button
+            type="submit"
+            className="w-full p-2 bg-[#D3E97A] hover:bg-emerald-50 text-gray-800 font-bold rounded transition"
+          >
+            Enviar
+          </button>
+        </div>
       </form>
     </div>
   );

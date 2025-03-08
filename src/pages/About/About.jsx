@@ -4,7 +4,7 @@ const About = () => {
   const navigate = useNavigate();
   
   return (
-    <div className="flex flex-col items-center justify-between md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
+    <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
       <div className="text-3xl pt-5 px-30">
         <h1 className="text-2xl font-bold">Sobre mim</h1>
       </div>

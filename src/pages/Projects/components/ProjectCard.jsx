@@ -9,7 +9,7 @@ const ProjectCard = ({
   githubLink,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
+    <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[80px] pt-10">
       <div>
         <img
           src={image}
@@ -19,16 +19,16 @@ const ProjectCard = ({
       </div>
       {/* Conteúdo do projeto */}
       <div className="mt-4 md:mt-0 w-[450px]">
-        <h3 className="text-xl font-bold">{title}</h3>
-        <p className="text-md mt-2 opacity-60">{description}</p>
+        <h3 className="text-3xl font-bold">{title}</h3>
+        <p className="text-xl mt-2 opacity-60">{description}</p>
         <div className="mt-4 text-lg">
-          <h3 className="font-semibold">Informações do projeto</h3>
-          <p>Ano: {year}</p>
-          <p>Função: {role}</p>
+          <h3 className="font-semibold text-xl">Informações do projeto</h3>
+          <p className="text-xl">Ano: {year}</p>
+          <p className="text-xl">Função: {role}</p>
         </div>
-        <div className="mt-4 flex gap-5 ">
-          <a href={linkProject}>Deploy do projeto</a>
-          <a href={githubLink}>Vejo no GitHub</a>
+        <div className="mt-4 flex gap-5 text-2xl ">
+          <a href={linkProject} className="hover:text-[#D3E97A] transition duration-300 ">Deploy do projeto</a>
+          <a href={githubLink} className="hover:text-[#D3E97A] transition duration-300">Vejo no GitHub</a>
         </div>
       </div>
     </div>

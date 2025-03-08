@@ -20,7 +20,7 @@ const Header = () => {
       </div>
 
       {/* Menu Desktop */}
-      <ul className="hidden md:flex gap-5">
+      <ul className="hidden md:flex gap-15 text-2xl">
         <li>
           <a href="#">Projetos</a>
         </li>
