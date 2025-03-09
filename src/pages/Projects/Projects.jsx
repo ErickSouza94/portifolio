@@ -11,14 +11,14 @@ const Projects = () => {
   };
   return (
     <section className="flex flex-col justify-between gap-6 border-b-3 border-gray-500 pb-6">
-      <h1>Projetos Realizados</h1>
+      <h1 >Projetos Realizados</h1>
       <Cards />
       <div className="botao flex justify-center py-10">
         <button
           onClick={toggleAllProjects}
-          className="w-50 py-4 text-center font-semibold text-xl border-2 border-gray-400 rounded-full cursor-pointer"
+          className="w-55 py-4 text-center font-semibold text-xl border-2 border-gray-400 rounded-full cursor-pointer hover:scale-105 transition duration-300 hover:bg-[#D3E97A] hover:text-black"
         >
-          {showAllProjects ? "Fechar Projetos" : "Ver mais projetos"}
+          <span className="text-2xl">{showAllProjects ? "Fechar Projetos" : "Ver mais projetos"}</span>
         </button>
       </div>
           {showAllProjects && 

@@ -25,10 +25,10 @@ const Header = () => {
           <a href="#">Projetos</a>
         </li>
         <li>
-          <a href="#">Sobre</a>
+          <a href="more-about">Sobre</a>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <a href="contact">Contato</a>
         </li>
       </ul>
 

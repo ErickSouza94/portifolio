@@ -27,8 +27,8 @@ const ProjectCard = ({
           <p className="text-xl">Função: {role}</p>
         </div>
         <div className="mt-4 flex gap-5 text-2xl ">
-          <a href={linkProject} className="hover:text-[#D3E97A] transition duration-300 ">Deploy do projeto</a>
-          <a href={githubLink} className="hover:text-[#D3E97A] transition duration-300">Vejo no GitHub</a>
+          <a href={linkProject} target="_blank" className="hover:text-[#D3E97A] transition duration-300 ">Deploy do projeto</a>
+          <a href={githubLink} target="_blank" className="hover:text-[#D3E97A] transition duration-300">Vejo no GitHub</a>
         </div>
       </div>
     </div>

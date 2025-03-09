@@ -10,18 +10,18 @@ const About = () => {
       </div>
 
       <div className="px-10">
-        <h2 className="text-3xl pt-10 pb-5">Front-end developer </h2>
-        <p className="text-md pb-20 w-[500px]">
+        <h2 className="text-4xl font-semibold pt-10 pb-5">Front-end developer </h2>
+        <p className="text-2xl pb-20 w-[500px]">
           Me chamo Erick, sou Desenvolvedor Front-end, com formação em História
           e atualmente cursando Análise e Desenvolvimento de Sistemas. Possuo
           experiência na criação de interfaces modernas e dinâmicas com
           React.js, JavaScript (ES6+), NextJs, HTML, CSS e Bootstrap e Tailwind.
         </p>
         <button
-          className="hover:text-[#D3E97A] hover:underline transition-colors duration-200"
+          className=" hover:text-[#D3E97A] hover:underline transition-colors duration-200"
           onClick={() => navigate("/more-about")}
         >
-          Mais sobre mim
+          <span className="text-2xl">Mais sobre mim</span>
         </button>
       </div>
     </div>

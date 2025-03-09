@@ -16,7 +16,7 @@ const projects = [
         image: "/spotify.png" ,
         year: "2025",
         role: "front-end / back-end" ,
-        linkProject: "spotify-player-i0gn.onrender.com",
+        linkProject: "https://spotify-player-i0gn.onrender.com",
         githubLink: "https://github.com/ErickSouza94/spotify-player",
     },
     {
@@ -25,7 +25,7 @@ const projects = [
         image: "/nossos-filmes.png",
         year: "2025",
         role: "front-end",
-        linkProject: "nossos-filmes-one.vercel.app",
+        linkProject: "https://nossos-filmes-one.vercel.app",
         githubLink: "https://github.com/ErickSouza94/nossos-filmes" ,
     },
     {
@@ -34,7 +34,7 @@ const projects = [
         image: "/finans.png",
         year: "2024",
         role: "front-end",
-        linkProject: "ericksouza94.github.io/projeto-finans/",
+        linkProject: "https://ericksouza94.github.io/projeto-finans/",
         githubLink: "https://github.com/ErickSouza94/projeto-finans",
     },
 ]

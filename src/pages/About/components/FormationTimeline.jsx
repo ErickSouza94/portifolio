@@ -25,7 +25,7 @@ const experiences = [
     title: "Jornada Full-Stack ",
     instituition: "Hashtag Treinamentos",
     description:
-      "Certificado de conclusão de curso, onde foi concluído um projeto clone do Spotify, utilizando ReactJS para o front-end e MongoDB para o back-end",
+      "Certificado de conclusão de curso, onde foi concluído um projeto clone do Spotify, utilizando ReactJS para o front-end, NodeJS para o back-end e MongoDB para banco de dados.",
   },
   {
     year: "2016-2020",
@@ -52,6 +52,7 @@ const FormationTimeline = () => {
               <h3 className="text-2xl font-semibold">
                 {exp.year} - {exp.title}
               </h3>
+              <h4 className="text-xl">{exp.instituition}</h4>
               <p className="text-[20px] text-gray-400">{exp.description}</p>
             </div>
           </div>
