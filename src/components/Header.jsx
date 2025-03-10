@@ -22,7 +22,7 @@ const Header = () => {
       {/* Menu Desktop */}
       <ul className="hidden md:flex gap-15 text-2xl">
         <li>
-          <a href="#">Projetos</a>
+          <a href="more-projects">Projetos</a>
         </li>
         <li>
           <a href="more-about">Sobre</a>
@@ -47,21 +47,21 @@ const Header = () => {
       >
         {/* Links do Menu */}
         <a
-          href="#"
+          href="more-projects"
           className="mb-4 border-2 w-full p-5 text-center"
           onClick={() => setMenuOpen(false)}
         >
           Projetos
         </a>
         <a
-          href="#"
+          href="more-about"
           className="mb-4 border-2 w-full p-5 text-center"
           onClick={() => setMenuOpen(false)}
         >
           Sobre
         </a>
         <a
-          href="#"
+          href="contact"
           className="mb-4 border-2 w-full p-5 text-center"
           onClick={() => setMenuOpen(false)}
         >

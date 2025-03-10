@@ -7,13 +7,14 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="global pt-[100px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="flex justify-around items-center gap-50 h-[700px] w-[100%] main pb-20 border-b-3 border-gray-500">
+      <div className="flex justify-around items-center h-[700px] w-[100%] main pb-20 border-b-3 border-gray-500 gap-10">
         <div className="w-auto text-3xl lado-esquerdo">
           <h1 className="font-bold">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA
           </h1>
-          <p className="text-2xl mt-2 opacity-60">
-            Desenvolvedor front-end com foco em React, Tailwind...
+          <p className="text-2xl md:max-h-[650px] md:max-w-[fit] mt-2 opacity-60">
+          <strong className="text-[#D3E97A] opacity-100 text-[30px] ">Desenvolvedor Front-End | React</strong> <br />
+          Sou um desenvolvedor front-end apaixonado por criar interfaces modernas, intuitivas e responsivas. Especializado em React, Tailwind e JavaScript, foco na experiência do usuário e no desenvolvimento mobile-first. Sempre em busca de aprendizado contínuo e boas práticas para entregar soluções eficientes e acessíveis.
           </p>
           <div className="contatos pt-10 flex gap-5 items-center">
             <button
@@ -39,7 +40,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="lado-direito">
+        <div className="lado-direito hidden md:block">
           <img
             src={perfil}
             alt="imagem de perfil"
