@@ -13,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="more-about" element={<MoreAbout />} />
-        <Route path="contact" element={<Contact />}/>
-        <Route path="more-projects" element={<MoreProjects/>}/>
+        <Route path="contact" element={<Contact />} />
+        <Route path="more-projects" element={<MoreProjects />} />
       </Routes>
     </BrowserRouter>
   );

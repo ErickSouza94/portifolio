@@ -2,7 +2,12 @@ import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const navigate = useNavigate();
-  
+
+  const handleClick = () => {
+    navigate("more-about")
+    window.scroll(0,0)
+  }
+
   return (
     <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
       <div className="text-3xl pt-5 px-30">
@@ -10,7 +15,9 @@ const About = () => {
       </div>
 
       <div className="px-10">
-        <h2 className="text-4xl font-semibold pt-10 pb-5">Front-end developer </h2>
+        <h2 className="text-4xl font-semibold pt-10 pb-5">
+          Front-end developer{" "}
+        </h2>
         <p className="text-2xl pb-20 w-[500px]">
           Me chamo Erick, sou Desenvolvedor Front-end, com formação em História
           e atualmente cursando Análise e Desenvolvimento de Sistemas. Possuo
@@ -18,8 +25,8 @@ const About = () => {
           React.js, JavaScript (ES6+), NextJs, HTML, CSS e Bootstrap e Tailwind.
         </p>
         <button
-          className=" hover:text-[#D3E97A] hover:underline transition-colors duration-200"
-          onClick={() => navigate("/more-about")}
+          className="more-about-button hover:text-[#D3E97A] hover:underline transition-colors duration-200 cursor-pointer"
+          onClick={handleClick}
         >
           <span className="text-2xl">Mais sobre mim</span>
         </button>

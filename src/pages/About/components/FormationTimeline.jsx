@@ -24,8 +24,7 @@ const experiences = [
     year: "2025",
     title: "Curso React",
     instituition: "Hora de Codar",
-    description:
-      " Curso de desenvolvimento web com React, com foco em ReactJS.",
+    description: " Curso de desenvolvimento web, com foco em ReactJS.",
   },
   {
     year: "2025",
@@ -48,7 +47,7 @@ const sortExperiences = experiences.sort((a, b) => (a.year > b.year ? 1 : -1));
 
 const FormationTimeline = () => {
   return (
-    <div className="container px-28 py-12">
+    <div className="container py-12 break-words">
       <div className="border-l-4 border-gray-300 pl-5">
         {sortExperiences.map((exp, index) => (
           <div

@@ -17,19 +17,17 @@ const experiences = [
     description:
       "Atuei como Desenvolvedor Front-end freelancer, contribuindo para o desenvolvimento do site institucional de uma fábrica de cadeiras de rodas, utilizando HTML, CSS e JavaScript, garantindo interfaces acessíveis e responsivas.",
   },
-
 ];
 
 const Timeline = () => {
   return (
-    <div className="container mx-auto px-10 py-12">
-      <div className="px-10 border-l-4 border-gray-300 pl-5">
+    <div className="container py-12 break-words">
+      <div className="border-l-4 border-gray-300 pl-5">
         {experiences.map((exp, index) => (
           <div
             key={index}
             className="mb-8 flex flex-col md:flex-row items-start md:items-center"
           >
-            <div className="rounded-full"></div>
             <div className="md:ml-10">
               <h3 className="text-2xl font-semibold">
                 {exp.year} - {exp.title}

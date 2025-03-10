@@ -32,8 +32,8 @@ const Contact = () => {
     }));
   }
   return (
-    <div className="flex flex-col justify-around items-center text-2xl gap-10 md:flex-row md:gap-4">
-      <div className="contato flex flex-col gap-10">
+    <div className="flex flex-col justify-around items-center text-2xl gap-10 xl:flex-row md:gap-4">
+      <div className="contato flex flex-col gap-10 ">
         <h1 className="flex justify-center items-center">Contato</h1>
         <h3 className="flex flex-row items-center gap-5">
           <GrMap />
