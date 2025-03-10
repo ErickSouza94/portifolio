@@ -14,8 +14,8 @@ const MoreAboutTop = () => {
       </div>
 
       <div className="px-10 py-10">
-        <h2 className="text-[32px] pt-10 pb-5">Front-end developer </h2>
-        <p className="text-[20px] pb-20 w-[500px]">
+        <h2 className="text-[32px] pt-10 pb-5 font-semibold">Front-end developer </h2>
+        <p className="text-[22px] pb-20 w-[500px]">
           Me chamo Erick Souza, moro atualmente em Portugal e sou um
           Desenvolvedor Front-end com foco em desenvolvimento web utilizando
           ferramentas atuais como React, JavaScript, HTML, CSS, Bootstrap NodeJs
@@ -34,7 +34,7 @@ const MoreAboutTop = () => {
         </p>
         <div className="buttons pt-10 flex gap-5 items-center">
           <button
-            className="py-2 w-fit px-10 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold
+            className="py-2 w-fit px-10 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold 
                     hover:bg-white transition-colors duration-300 cursor-pointer
                     transform hover:scale-105"
           >
