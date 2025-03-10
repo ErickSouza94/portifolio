@@ -39,7 +39,7 @@ const MoreAboutTop = () => {
                     transform hover:scale-105"
           >
             <a
-              href="/cv-europass-dev.pdf"
+              href="/erick-dev-europass.pdf"
               download={"Erick_Souza_Dev_Resume.pdf"}
             >
               <span className="flex w-[100%] items-center justify-between gap-5">

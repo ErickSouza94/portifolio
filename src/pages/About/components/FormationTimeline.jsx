@@ -18,7 +18,14 @@ const experiences = [
     title: "Desenvolvedor Full-Stack ",
     instituition: "Udemy",
     description:
-      " Curso de Desenvolvimento Full-Stack, com foco em HTML, CSS, Bootstrap, JavaScript, React, PHP, SQL, entre outros.",
+      " Curso de Desenvolvimento Web Full-Stack, com foco em HTML, CSS, Bootstrap, JavaScript, React, SQL, entre outros.",
+  },
+  {
+    year: "2025",
+    title: "Curso React",
+    instituition: "Hora de Codar",
+    description:
+      " Curso de desenvolvimento web com React, com foco em ReactJS.",
   },
   {
     year: "2025",

@@ -13,7 +13,7 @@ const Connect = () => {
         <h1 className="font-bold">Entre em contato</h1>
         <p className="text-lg">Email: <a href="mailto:erick.ssouza94@gmail.com"
         className="hover:text-blue-700 transform hover:scale-105 transition duration-300">erick.ssouza94@gmail.com</a></p>
-        <p className="text-lg">Para mais informações, aqui <a href="/cv-europass-dev.pdf"
+        <p className="text-lg">Para mais informações, aqui <a href="/erick-dev-europass.pdf"
         download={"Erick_Souza_Dev_Resume.pdf"}
         className="hover:text-blue-700 transform hover:scale-105 transition duration-300"
         >meu currículo</a>.
