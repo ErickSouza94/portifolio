@@ -7,12 +7,12 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="global pt-[100px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="flex justify-around items-center h-[700px] w-[100%] main pb-20 border-b-3 border-gray-500 gap-10">
-        <div className="w-full text-3xl lado-esquerdo">
-          <h1 className="font-bold">
+      <div className="flex justify-around items-center h-[700px] w-[100%] main pb-20 border-b-3 border-gray-500 gap-5">
+        <div className="w-full text-3xl md:text-2xl sm:text-xl lado-esquerdo">
+          <h1 className="font-bold text-9xl md:text-2xl sm:text-xl">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA
           </h1>
-          <p className="text-2xl md:max-h-[650px] md:max-w-[fit] mt-2 opacity-60">
+          <p className="text-xl md:text-xl max-w-[800px] md:max-w-[fit] mt-2 opacity-60">
             <strong className="title-sobre text-[#D3E97A] opacity-100 text-[30px] ">
               Desenvolvedor Front-End | React
             </strong>{" "}
@@ -47,7 +47,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="lado-direito hidden md:block">
+        <div className="lado-direito hidden w-6xl md:block">
           <img
             src={perfil}
             alt="imagem de perfil"

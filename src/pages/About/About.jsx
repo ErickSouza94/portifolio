@@ -14,11 +14,11 @@ const About = () => {
         <h1 className="text-2xl font-bold">Sobre mim</h1>
       </div>
 
-      <div className="px-10">
+      <div className="px-5 md:px-10">
         <h2 className="text-4xl font-semibold pt-10 pb-5">
           Front-end developer{" "}
         </h2>
-        <p className="text-2xl pb-20 w-[500px]">
+        <p className="text-2xl pb-20 max-w-[500px]">
           Me chamo Erick, sou Desenvolvedor Front-end, com formação em História
           e atualmente cursando Análise e Desenvolvimento de Sistemas. Possuo
           experiência na criação de interfaces modernas e dinâmicas com

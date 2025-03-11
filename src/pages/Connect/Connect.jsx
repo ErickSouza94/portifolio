@@ -37,7 +37,7 @@ const Connect = () => {
         </div>
       </div>
 
-      <div className="px-6 md:w-[600px] pt-20"><Forms
+      <div className="px-2 max-w-[400px] pt-20"><Forms
       initialData={{name: "", email: "", subject: "", message: "" }}
       onSubmit={handleFormSubmit}/>
       </div>

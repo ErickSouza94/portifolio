@@ -25,7 +25,7 @@ const Contact = () => {
     //Resetar o formulário
     setFormData((prevState) => ({
       ...prevState,
-      nome: "",
+      name: "",
       email: "",
       assunto: "",
       mensagem: "",
@@ -52,16 +52,16 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="email flex flex-col justify-center items-center p-4 rounded-lg mt-20 w-[25%] h-auto">
-        <form onSubmit={handleSubmit} className="border-1 border-[#1a1a1a] rounded-xl p-4">
-          <div className="w-[600px] h-[85px] ">
-            <label htmlFor="nome" className="w-[44px] h-[26px]  text-[20px]">
+      <div className="email flex flex-col justify-center items-center p-4 rounded-lg mt-20 h-auto max-w-[600px]">
+        <form onSubmit={handleSubmit} className="border-1 border-[#1a1a1a] rounded-xl p-4 ">
+          <div >
+            <label htmlFor="name" className="w-full h-[26px]  text-[20px]">
               Nome:
             </label>
             <div>
               <input
                 type="text"
-                name="nome"
+                name="name"
                 placeholder="Seu nome"
                 value={formData.nome}
                 onChange={handleChange}

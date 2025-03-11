@@ -17,8 +17,8 @@ const Form = ({ initialData, onSubmit }) => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-5 bg-neutral-950 text-white rounded-lg shadow-lg w-[600px] h-[500px] flex flex-col justify-center">
-      <h2 className="text-4xl font-bold mb-10 text-center">Me envie um email</h2>
+    <div className="mx-auto p-5 bg-neutral-950 text-white rounded-lg shadow-lg w-[400px] max-w-[600px] h-[500px] flex flex-col justify-center">
+      <h2 className="text-3xl font-bold mb-10 text-center">Me envie um email</h2>
       <form onSubmit={handleSubmit} className="space-y-4 ">
         <input
           type="text"
