@@ -5,11 +5,11 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex justify-between items-center p-6 border-b border-gray-500 w-full bg-black ">
+    <header className="relative flex justify-between items-center p-6 border-b border-gray-500 mx-auto container bg-black ">
       {/* Logo */}
-      <h2 className="text-4xl font-semibold">
+      <h1 className="text-2xl font-semibold">
         <a href="/">Erick Souza</a>
-      </h2>
+      </h1>
 
       {/* Ícone do Menu (Fica sempre visível) */}
       <div
