@@ -9,7 +9,7 @@ const MoreAboutTop = () => {
         <img
           src={working}
           alt="imagem"
-          className="w-[500px] max-w-full h-[460px] object-fill rounded-full"
+          className="hidden md:block w-[500px] max-w-full h-[460px] object-fill rounded-full"
         />
       </div>
 

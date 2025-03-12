@@ -5,7 +5,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="relative flex justify-between items-center p-6 border-b border-gray-500 mx-auto container bg-black ">
+    <header className="relative flex justify-between items-center p-6 border-b border-gray-500 mx-auto bg-black ">
       {/* Logo */}
       <h1 className="text-2xl font-semibold">
         <a href="/">Erick Souza</a>

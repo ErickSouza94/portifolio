@@ -7,9 +7,9 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="global pt-[100px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="flex justify-around items-center h-[700px] w-[100%] main pb-20 border-b-3 border-gray-500 gap-5">
-        <div className="w-full text-3xl md:text-2xl sm:text-xl lado-esquerdo">
-          <h1 className="font-bold text-9xl md:text-2xl sm:text-xl">
+      <div className="mx-auto flex flex-col-reverse md:flex-row justify-between items-center h-[700px]  w-[100%] pb-20 border-b-3 border-gray-500 gap-5">
+        <div className="w-full p-5 md:text-2xl sm:text-xl sm:max-h-[650px]lado-esquerdo items-center">
+          <h1 className="font-bold text-[1.5em] sm:w-[350px] ">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA
           </h1>
           <p className="text-xl md:text-xl max-w-[800px] md:max-w-[fit] mt-2 opacity-60">
@@ -23,7 +23,7 @@ const Home = () => {
             mobile-first. Sempre em busca de aprendizado contínuo e boas
             práticas para entregar soluções eficientes e acessíveis.
           </p>
-          <div className="contatos pt-10 flex gap-5 items-center">
+          <div className="contatos md:p-5 pt-10 flex gap-5 items-center">
             <button
               className="text-center py-2 px-14 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold
               hover:bg-white transition-colors duration-300 cursor-pointer
