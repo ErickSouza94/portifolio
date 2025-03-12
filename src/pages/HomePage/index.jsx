@@ -7,7 +7,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Home = () => {
   return (
     <div className="global pt-[100px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="mx-auto flex flex-col-reverse md:flex-row justify-between items-center h-[700px]  w-[100%] pb-20 border-b-3 border-gray-500 gap-5">
+      <div className="mx-auto flex flex-col-reverse md:flex-row justify-between items-center h-[700px]  pb-20 border-b-3 border-gray-500 gap-5">
         <div className="w-full p-5 md:text-2xl sm:text-xl sm:max-h-[650px]lado-esquerdo items-center">
           <h1 className="font-bold text-[1.5em] sm:w-[350px] ">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA
@@ -51,7 +51,7 @@ const Home = () => {
           <img
             src={perfil}
             alt="imagem de perfil"
-            className="w-[600px] max-w-full h-[700px] pt-20 object-fill rounded-full"
+            className="w-[500px] max-w-[50%] h-[700px] object-contain"
           />
         </div>
       </div>

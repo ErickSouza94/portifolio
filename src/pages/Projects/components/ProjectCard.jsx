@@ -9,7 +9,7 @@ const ProjectCard = ({
   githubLink,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[80px] pt-10">
+    <div className="flex sm:flex-col md:flex-row items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[80px] pt-10">
       <div>
         <img
           src={image}

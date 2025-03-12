@@ -32,7 +32,7 @@ const Contact = () => {
     }));
   }
   return (
-    <div className="flex flex-col justify-around items-center text-2xl gap-10 xl:flex-row md:gap-4">
+    <div className="flex flex-col justify-around items-center text-2xl gap-10 xl:flex-row md:gap-4 p-4">
       <div className="contato flex flex-col gap-10 ">
         <h1 className="flex justify-center items-center">Contato</h1>
         <h3 className="flex flex-row items-center gap-5">
@@ -52,8 +52,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="email flex flex-col justify-center items-center p-4 rounded-lg mt-20 h-auto max-w-[600px]">
-        <form onSubmit={handleSubmit} className="border-1 border-[#1a1a1a] rounded-xl p-4 ">
+      <div className="email flex flex-col justify-center items-center p-4 rounded-lg mt-10 md:mt-10 h-auto w-full max-w-[600px]">
+        <form onSubmit={handleSubmit} className="border-1 border-[#1a1a1a] rounded-xl p-4 w-[400px] sm:w-full">
           <div >
             <label htmlFor="name" className="w-full h-[26px]  text-[20px]">
               Nome:
@@ -70,24 +70,24 @@ const Contact = () => {
             </div>
           </div>
           <div className="pt-4">
-            <label htmlFor="email" className="w-[44px] h-[26px] text-[20px] ">
+            <label htmlFor="email" className="w-full h-[26px] text-[20px]">
               Email:
             </label>
             <div>
               <input
                 type="email"
                 name="email"
-                placeholder="Digite seu email"
+                placeholder="Seu email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-[600px] h-[50px] bg-[#1A1A1A] p-4 rounded-2xl"
+                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-2xl"
               />
             </div>
           </div>
           <div className="pt-4">
             <label
               htmlFor="assunto"
-              className="w-[44px] h-[26px] pb-8 text-[20px]"
+              className="w-full h-[26px] pb-8 text-[20px]"
             >
               Assunto:
             </label>
@@ -98,21 +98,21 @@ const Contact = () => {
                 placeholder="Assunto"
                 value={formData.assunto}
                 onChange={handleChange}
-                className="w-[600px] h-[50px] bg-[#1A1A1A] p-4 rounded-2xl"
+                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-2xl"
               />
             </div>
           </div>
           <div className="pt-4">
-            <label htmlFor="mensagem" className="w-[44px] h-[26px] text-[20px]">
+            <label htmlFor="mensagem" className="w-full h-[26px] text-[20px]">
               Mensagem:
             </label>
             <div className="pb-2">
               <textarea
                 name="mensagem"
-                placeholder="Sua mensagem aqui"
+                placeholder="Mensagem"
                 value={formData.mensagem}
                 onChange={handleChange}
-                className="w-[600px] h-[400px] bg-[#1A1A1A] p-4 rounded-2xl "
+                className="w-full h-[400px] bg-[#1A1A1A] p-4 rounded-2xl "
               ></textarea>
             </div>
           </div>

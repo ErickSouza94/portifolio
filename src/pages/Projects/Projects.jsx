@@ -10,9 +10,9 @@ const Projects = () => {
     setShowAllProjects(!showAllProjects);
   };
   return (
-    <section className="flex flex-col justify-between gap-6 border-b-3 border-gray-500 pb-6">
+    <section className="flex flex-col justify-between w-auto gap-6 border-b-3 border-gray-500 pb-6">
       <h1 >Projetos Realizados</h1>
-      <Cards />
+      <Cards/>
       <div className="botao flex justify-center py-10">
         <button
           onClick={toggleAllProjects}

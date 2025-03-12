@@ -10,7 +10,7 @@ const CustomMarkerMap = () => {
         center={position}
         zoom={13}
         scrollWheelZoom={true}
-        className="map-container h-[400px] w-[600px] min-w-auto index-2"
+        className="map-container h-[400px] sm:w-[600px] w-full min-w-auto index-2"
       >
         <ScaleControl position="bottomright"/>
         <TileLayer
