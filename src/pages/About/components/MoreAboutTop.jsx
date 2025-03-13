@@ -4,14 +4,14 @@ import working from "/working.jpeg";
 const MoreAboutTop = () => {
   return (
     <div className="flex flex-col justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
-      <div className="text-3xl w-[100%]">
+      <div className="text-3xl w-[100%] sm:flex sm:flex-col sm:items-center">
         <h1 className="text-2xl font-bold text-center">Sobre mim</h1>
         <img
           src={working}
           alt="imagem"
           className="hidden md:block w-[500px] max-w-full h-[460px] object-fill rounded-full"
         />
-        <div className="buttons hidden md:flex pt-10 gap-5 items-center ">
+        <div className="buttons hidden md:flex justify-center pt-10 gap-5 items-center ">
           <button
             className="py-2 w-fit px-10 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold
                     hover:bg-white transition-colors duration-300 cursor-pointer
