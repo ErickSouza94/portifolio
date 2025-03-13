@@ -4,18 +4,18 @@ import working from "/working.jpeg";
 const MoreAboutTop = () => {
   return (
     <div className="flex flex-col justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
-      <div className="text-3xl">
+      <div className="text-3xl w-[100%]">
         <h1 className="text-2xl font-bold text-center">Sobre mim</h1>
         <img
           src={working}
           alt="imagem"
           className="hidden md:block w-[500px] max-w-full h-[460px] object-fill rounded-full"
         />
-        <div className="buttons pt-10 flex gap-5 items-center ">
+        <div className="buttons hidden md:flex pt-10 gap-5 items-center ">
           <button
             className="py-2 w-fit px-10 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold
                     hover:bg-white transition-colors duration-300 cursor-pointer
-                    transform hover:scale-105 !text-[20px] whitespace-nowrap"
+                    transform hover:scale-105 text-[20px] whitespace-nowrap"
           >
             <a
               href="/erick-dev-europass.pdf"
@@ -45,7 +45,7 @@ const MoreAboutTop = () => {
         </div>
       </div>
 
-      <div className="px-10 py-10">
+      <div className="px-10 py-10 w-[100%]">
         <h2 className="text-[32px] pb-10 font-semibold text-center">Front-end developer </h2>
         <p className="text-[22px] pb-20 w-[100%]">
           Me chamo Erick Souza, moro atualmente em Portugal e sou um
