@@ -13,8 +13,8 @@ import express from "/express.svg"
 const Tools = () => {
   return (
     <div className="p-5 flex items-center gap-5 flex-wrap max-w-[800px]">
-            <img src={html} alt="" className="md:w-[20%] h-[10%] max-w-[24%] sm:w-[20%]"/>
-            <img src={css} alt="" className="md:w-[17%] h-[10%] max-w-[24%] sm:w-[20%]"/>
+            <img src={html} alt="" className="md:w-[16%] h-[10%] max-w-[24%] sm:w-[20%]"/>
+            <img src={css} alt="" className="md:w-[15%] h-[10%] max-w-[24%] sm:w-[20%]"/>
             <img src={js} alt="" className="md:w-[20%] h-[10%] max-w-[24%] sm:w-[20%]"/>
             <img src={bootstrap} alt="" className="md:w-[20%] h-[10%] max-w-[24%] sm:w-[20%]"/>
             <img src={tailwind} alt="" className="md:w-[24%] h-[10%] max-w-[24%] sm:w-[20%]"/>
