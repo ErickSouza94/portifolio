@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import working from "/working.jpeg";
+import Tools from "../../../components/Tools";
 
 const MoreAboutTop = () => {
   return (
@@ -64,7 +65,12 @@ const MoreAboutTop = () => {
           <br /><br />
           Sempre aberto para novos conhecimentos!
         </p>
-        
+
+          <div className="flex flex-col items-center text-center w-[100%]">
+            <p className="text-2xl font-semibold">Tecnologias utilizadas:</p>
+            <Tools/>
+          </div>
+
       </div>
     </div>
   );

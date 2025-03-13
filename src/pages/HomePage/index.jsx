@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div className="global md:pt-[80px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="mx-auto w-full flex flex-col-reverse md:flex-row justify-between items-center max-h-[100%]  pb-15 border-b-3 border-gray-500 gap-5">
+      <div className="mx-auto w-full flex flex-col-reverse md:flex-row justify-around items-center max-h-[100%]  pb-15 border-b-3 border-gray-500 gap-5">
         <div className="w-full p-5 md:text-2xl sm:text-xl max-h-[100%] lado-esquerdo items-center">
           <h1 className="font-bold !text-[2em] sm:w-[350px] ">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA
