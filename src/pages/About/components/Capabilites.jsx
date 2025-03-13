@@ -17,7 +17,7 @@ const Capabilites = () => {
             HTML, CSS, Bootstrap, Tailwind
           </li>
           <li className="pb-3">
-            <strong>Back-end</strong>: Noções de Node.js, Express.js, MongoDB
+            <strong>Back-end</strong>: Noções de Node.js, Express.js, MongoDB e Prisma
             (aprendizado Full-Stack)
           </li>
           <li className="pb-3">
