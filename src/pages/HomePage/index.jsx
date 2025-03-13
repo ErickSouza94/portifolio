@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import About from "../About/About";
 import Connect from "../Connect/Connect";
 import Projects from "../Projects/Projects";
@@ -5,11 +6,13 @@ import perfil from "/perfil.png";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Home = () => {
+  const navigate = useNavigate()
+
   return (
-    <div className="global pt-[100px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="mx-auto flex flex-col-reverse md:flex-row justify-between items-center h-[700px]  pb-20 border-b-3 border-gray-500 gap-5">
-        <div className="w-full p-5 md:text-2xl sm:text-xl sm:max-h-[650px]lado-esquerdo items-center">
-          <h1 className="font-bold text-[1.5em] sm:w-[350px] ">
+    <div className="global md:pt-[80px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
+      <div className="mx-auto w-full flex flex-col-reverse md:flex-row justify-between items-center h-[700px]  pb-20 border-b-3 border-gray-500 gap-5">
+        <div className="w-full p-5 md:text-2xl sm:text-xl max-h-[650px] lado-esquerdo items-center">
+          <h1 className="font-bold !text-[2em] sm:w-[350px] ">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA
           </h1>
           <p className="text-xl md:text-xl max-w-[800px] md:max-w-[fit] mt-2 opacity-60">
@@ -25,6 +28,7 @@ const Home = () => {
           </p>
           <div className="contatos md:p-5 pt-10 flex gap-5 items-center">
             <button
+              onClick={() => {navigate('contact')}}
               className="text-center py-2 px-14 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold
               hover:bg-white transition-colors duration-300 cursor-pointer
               transform hover:scale-105"
@@ -47,11 +51,11 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="lado-direito hidden w-6xl md:block">
+        <div className="lado-direito hidden w-[100%] md:flex md:justify-end" >
           <img
             src={perfil}
             alt="imagem de perfil"
-            className="w-[500px] max-w-[50%] h-[700px] object-contain"
+            className="w-[100%] max-w-[500px] h-[700px] object-contain"
           />
         </div>
       </div>

@@ -53,7 +53,7 @@ const Contact = () => {
       </div>
 
       <div className="email flex flex-col justify-center items-center p-4 rounded-lg mt-10 md:mt-10 h-auto w-full max-w-[600px]">
-        <form onSubmit={handleSubmit} className="border-1 border-[#1a1a1a] rounded-xl p-4 w-[400px] sm:w-full">
+        <form onSubmit={handleSubmit} className="border-1 border-[#1a1a1a] rounded-xl p-2 w-[100%] sm:w-full">
           <div >
             <label htmlFor="name" className="w-full h-[26px]  text-[20px]">
               Nome:

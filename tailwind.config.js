@@ -1,13 +1,14 @@
 // eslint-disable-next-line no-undef
 module.exports = {
-    theme: {
-      extend: {},
-      screens: {
-        sm: { max: "767px" },   // Até 767px (Mobile)
-        md: { min: "768px", max: "1023px" },  // Entre 768px e 1023px (Tablet)
-        lg: { min: "1024px", max: "1279px" }, // Entre 1024px e 1279px (Laptop)
-        xl: { min: "1280px" }  // Acima de 1280px (Monitores grandes)
-      }
-    },
-    plugins: [],
-  };
+  theme: {
+    extend: {},
+    screens: {
+      sm: "640px",   // A partir de 640px (Mobile)
+      md: "768px",   // A partir de 768px (Tablet)
+      lg: "1024px",  // A partir de 1024px (Laptop)
+      xl: "1280px",  // A partir de 1280px (Monitores grandes)
+      "2xl": "1536px" // A partir de 1536px (Muito grandes)
+    }
+  },
+  plugins: [],
+};

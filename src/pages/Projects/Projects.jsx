@@ -16,7 +16,7 @@ const Projects = () => {
       <div className="botao flex justify-center py-10">
         <button
           onClick={toggleAllProjects}
-          className="w-55 py-4 text-center font-semibold text-xl border-2 border-gray-400 rounded-full cursor-pointer hover:scale-105 transition duration-300 hover:bg-[#D3E97A] hover:text-black"
+          className="w-[100%] py-4 text-center font-semibold text-xl border-2 border-gray-400 rounded-full cursor-pointer hover:scale-105 transition duration-300 hover:bg-[#D3E97A] hover:text-black"
         >
           <span className="text-2xl">{showAllProjects ? "Fechar Projetos" : "Ver mais projetos"}</span>
         </button>

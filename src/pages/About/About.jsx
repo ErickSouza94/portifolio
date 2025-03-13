@@ -14,7 +14,7 @@ const About = () => {
         <h1 className="text-2xl font-bold">Sobre mim</h1>
       </div>
 
-      <div className="px-5 md:px-10">
+      <div className="px-5 md:px-10 max-w-[500px] w-[100%]">
         <h2 className="text-4xl font-semibold pt-10 pb-5">
           Front-end developer{" "}
         </h2>

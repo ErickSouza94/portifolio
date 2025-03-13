@@ -42,7 +42,7 @@ const projects = [
 const Cards = () => {
     
   return (
-   <div className="hidden sm:block">
+   <div>
         {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
         ))}

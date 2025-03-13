@@ -47,7 +47,7 @@ const sortExperiences = experiences.sort((a, b) => (a.year > b.year ? 1 : -1));
 
 const FormationTimeline = () => {
   return (
-    <div className="container py-12 break-words">
+    <div className="container break-words">
       <div className="border-l-4 border-gray-300 pl-5">
         {sortExperiences.map((exp, index) => (
           <div
