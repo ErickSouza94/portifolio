@@ -4,9 +4,9 @@ const About = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("more-about")
-    window.scroll(0,0)
-  }
+    navigate("more-about");
+    window.scroll(0, 0);
+  };
 
   return (
     <div className="flex flex-col items-center justify-around md:gap-5 lg:flex-row lg:gap-10 border-b border-gray-400 pb-[100px]">
@@ -14,7 +14,7 @@ const About = () => {
         <h1 className="text-2xl font-bold">Sobre mim</h1>
       </div>
 
-      <div className="px-5 md:px-10 max-w-[500px] w-[100%]">
+      <div className="px-5 md:px-10 max-w-[500px] w-full">
         <h2 className="text-4xl font-semibold pt-10 pb-5">
           Front-end developer{" "}
         </h2>

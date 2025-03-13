@@ -5,17 +5,16 @@ import Projects from "../Projects/Projects";
 
 import perfil from "/perfil.png";
 
-
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import Tools from "../../components/Tools";
 
 const Home = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="global md:pt-[80px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
-      <div className="mx-auto w-full flex flex-col-reverse md:flex-row justify-around items-center max-h-[100%]  pb-15 border-b-3 border-gray-500 gap-5">
-        <div className="w-full p-5 md:text-2xl sm:text-xl max-h-[100%] lado-esquerdo items-center">
+      <div className="mx-auto w-full flex flex-col-reverse md:flex-row justify-around items-center max-h-full  pb-15 border-b-3 border-gray-500 gap-5">
+        <div className="w-full p-5 md:text-2xl sm:text-xl max-h-full lado-esquerdo items-center">
           <h1 className="font-bold !text-[2em] sm:w-[350px] ">
             OLÁ, EU ME CHAMO <br /> ERICK SOUZA
           </h1>
@@ -33,10 +32,12 @@ const Home = () => {
           <div>
             <Tools />
           </div>
-          
+
           <div className="contatos md:p-5 pt-10 flex gap-5 items-center">
             <button
-              onClick={() => {navigate('contact')}}
+              onClick={() => {
+                navigate("contact");
+              }}
               className="text-center py-2 px-14 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold
               hover:bg-white transition-colors duration-300 cursor-pointer
               transform hover:scale-105"
@@ -59,11 +60,11 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="lado-direito hidden w-[100%] md:flex md:justify-end" >
+        <div className="lado-direito hidden w-full md:flex md:justify-end">
           <img
             src={perfil}
             alt="imagem de perfil"
-            className="w-[100%] max-w-[500px] h-[700px] object-contain"
+            className="w-full max-w-[500px] h-[700px] object-contain"
           />
         </div>
       </div>

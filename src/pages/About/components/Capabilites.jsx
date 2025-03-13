@@ -7,18 +7,18 @@ const Capabilites = () => {
         </h1>
       </div>
 
-      <div className="px-10 py-10 w-[100%] max-w-[500px]">
+      <div className="px-10 py-10 w-full max-w-[500px]">
         <h2 className="text-[32px] font-semibold pb-5 pt-10">
           Habilidades Técnicas
         </h2>
-        <ul className="list-disc text-[20px] pb-20 w-[100%] max-w-[500px] text-2xl pl-[25px] ">
+        <ul className="list-disc text-[20px] pb-20 w-full max-w-[500px] text-2xl pl-[25px] ">
           <li className="pb-3">
             <strong> Front-end:</strong> React.js, JavaScript (ES6+), Next.js,
             HTML, CSS, Bootstrap, Tailwind
           </li>
           <li className="pb-3">
-            <strong>Back-end</strong>: Noções de Node.js, Express.js, MongoDB e Prisma
-            (aprendizado Full-Stack)
+            <strong>Back-end</strong>: Noções de Node.js, Express.js, MongoDB e
+            Prisma (aprendizado Full-Stack)
           </li>
           <li className="pb-3">
             <strong>Ferramentas:</strong> Git, GitHub, Figma, Metodologias Ágeis

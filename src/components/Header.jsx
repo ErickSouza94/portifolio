@@ -13,7 +13,9 @@ const Header = () => {
 
       {/* Ícone do Menu (Fica sempre visível) */}
       <div
-        className={`md:hidden text-3xl cursor-pointer z-1500 ${menuOpen && 'fixed right-10'}`}
+        className={`md:hidden text-3xl cursor-pointer z-1500 ${
+          menuOpen && "fixed right-10"
+        }`}
         onClick={() => setMenuOpen(!menuOpen)}
       >
         {menuOpen ? <FaTimes /> : <FaBars />}
@@ -41,7 +43,7 @@ const Header = () => {
 
       {/* Menu Mobile */}
       <div
-        className={`fixed top-0 left-0 w-full h-[100%] z-1499 bg-[#000000db] flex flex-col items-center justify-center text-2xl border-2 border-gray-500 transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-full h-full z-1499 bg-[#000000db] flex flex-col items-center pt-30 text-2xl border-2 border-gray-500 transition-transform duration-300 ${
           menuOpen ? "translate-y-0" : "-translate-y-full "
         }`}
       >

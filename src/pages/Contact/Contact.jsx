@@ -14,13 +14,13 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    const {name, value} = e.target;
-    setFormData({...formData, [name]: value});
-  }
-  
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Formulário enviado com sucesso!")
+    alert("Formulário enviado com sucesso!");
 
     //Resetar o formulário
     setFormData((prevState) => ({
@@ -30,7 +30,7 @@ const Contact = () => {
       assunto: "",
       mensagem: "",
     }));
-  }
+  };
   return (
     <div className="flex flex-col justify-around items-center text-2xl gap-10 xl:flex-row md:gap-4 p-4">
       <div className="contato flex flex-col gap-10 ">
@@ -53,8 +53,11 @@ const Contact = () => {
       </div>
 
       <div className="email flex flex-col justify-center items-center p-4 rounded-lg mt-10 md:mt-10 h-auto w-full max-w-[600px]">
-        <form onSubmit={handleSubmit} className="border-1 border-[#1a1a1a] rounded-xl p-2 w-[100%] sm:w-full">
-          <div >
+        <form
+          onSubmit={handleSubmit}
+          className="border-1 border-[#1a1a1a] rounded-xl p-2 w-full sm:w-full"
+        >
+          <div>
             <label htmlFor="name" className="w-full h-[26px]  text-[20px]">
               Nome:
             </label>
@@ -116,7 +119,10 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-          <button type="submit" className="text-white w-full font-semibold rounded-xl p-3 hover:bg-[#1A1A1A] transition-colors duration-300 cursor-pointer transform hover:scale-105">
+          <button
+            type="submit"
+            className="text-white w-full font-semibold rounded-xl p-3 hover:bg-[#1A1A1A] transition-colors duration-300 cursor-pointer transform hover:scale-105"
+          >
             Enviar
           </button>
         </form>
