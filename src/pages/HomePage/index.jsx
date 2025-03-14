@@ -60,11 +60,11 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div className="lado-direito hidden w-full md:flex md:justify-end">
+        <div className="lado-direito hidden w-full md:flex md:justify-center ">
           <img
             src={perfil}
             alt="imagem de perfil"
-            className="w-full max-w-[500px] h-[700px] object-contain"
+            className="w-full max-w-[500px] rounded-t-xl object-contain "
           />
         </div>
       </div>
