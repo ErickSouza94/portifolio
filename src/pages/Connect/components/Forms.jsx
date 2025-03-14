@@ -61,7 +61,7 @@ const Form = ({ initialData, onSubmit }) => {
         <div className="pt-5">
           <button
             type="submit"
-            className="w-full p-2 bg-[#D3E97A] hover:bg-emerald-50 text-gray-800 font-bold rounded transition"
+            className="w-full p-2 bg-[#D3E97A] hover:bg-emerald-50 text-gray-800 font-bold rounded transition cursor-pointer"
           >
             Enviar
           </button>

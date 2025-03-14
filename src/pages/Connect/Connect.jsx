@@ -15,19 +15,19 @@ const Connect = () => {
           Email:{" "}
           <a
             href="mailto:erick.ssouza94@gmail.com"
-            className="hover:text-blue-700 transform hover:scale-105 transition duration-300"
+            className="hover:text-blue-700"
           >
             erick.ssouza94@gmail.com
           </a>
         </p>
         <p className="text-lg">
-          Para mais informações, aqui{" "}
+          Para mais informações sobre meu currículo, {" "}
           <a
             href="/erick-dev-europass.pdf"
             download={"Erick_Souza_Dev_Resume.pdf"}
-            className="hover:text-blue-700 transform hover:scale-105 transition duration-300"
+            className="hover:text-blue-700 animate-pulse"
           >
-            meu currículo
+            clique aqui
           </a>
           .
         </p>
@@ -35,7 +35,7 @@ const Connect = () => {
         <div className="flex flex-col">
           <div className="pt-10 flex gap-5 text-center justify-start">
             <FaLinkedinIn className="text-[#D3E97A] bg-black" />{" "}
-            <span className="items-center text-center text-lg">
+            <span className="items-center text-center text-lg hover:scale-110 transition duration-300">
               <a
                 href="https://www.linkedin.com/in/ericksouza94/"
                 target="_blank"
@@ -44,9 +44,9 @@ const Connect = () => {
               </a>
             </span>
           </div>
-          <div className="pt-10 flex gap-5 text-center justify-start">
+          <div className="pt-10 flex gap-5 text-center justify-start ">
             <FaGithub className="text-[#D3E97A] bg-black" />{" "}
-            <span className="items-center text-center text-lg">
+            <span className="items-center text-center text-lg hover:scale-110 transition duration-300">
               <a href="https://github.com/ErickSouza94" target="_blank">
                 GitHub
               </a>

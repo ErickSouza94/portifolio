@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="relative flex justify-between items-center p-6 border-b border-gray-500 mx-auto bg-black ">
       {/* Logo */}
-      <h1 className="text-2xl font-semibold">
+      <h1 className="text-2xl font-semibold hover:scale-110 transition duration-300">
         <a href="/">Erick Souza</a>
       </h1>
 
