@@ -28,7 +28,7 @@ const About = () => {
           className="more-about-button hover:text-[#D3E97A] hover:underline transition-colors duration-200 cursor-pointer"
           onClick={handleClick}
         >
-          <span className="text-2xl">Mais sobre mim</span>
+          <span className="text-xl">Mais sobre mim</span>
         </button>
       </div>
     </div>
