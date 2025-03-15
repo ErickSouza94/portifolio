@@ -18,7 +18,7 @@ const Home = () => {
         <div className="w-full p-5 md:text-2xl sm:text-xl max-h-full lado-esquerdo items-center">
           <Animation />
           <p className="text-xl md:text-xl max-w-[800px] md:max-w-[fit] mt-2 opacity-60">
-              <strong className="title-sobre text-[#D3E97A] opacity-100 md:text-[30px] sm:text-[24px]" style={{fontFamily: "cursive", fontWeight:"bold"}}>
+              <strong className="title-sobre text-[#D3E97A] opacity-100 md:text-[30px] sm:text-[24px]">
                 Desenvolvedor Front-End | React
               </strong>
             {" "}

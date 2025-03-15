@@ -12,7 +12,7 @@ const Animation = () => {
       wrapper="h1"
       speed={50}
       repeat={Infinity}
-      style={{ whiteSpace: "pre-wrap", fontFamily: "cursive", fontWeight:"bolder" }}
+      style={{ whiteSpace: "pre-wrap", fontWeight:"bolder" }}
      
     />
   );
