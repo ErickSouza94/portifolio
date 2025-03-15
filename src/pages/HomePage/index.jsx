@@ -13,12 +13,12 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="global md:pt-[80px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
+    <div className="global md:pt-[50px] flex flex-col justify-center border-b-3 border-gray-500 gap-[50px] px-[20px]">
       <div className="mx-auto w-full flex flex-col-reverse md:flex-row justify-around items-center max-h-full  pb-15 border-b-3 border-gray-500 gap-5">
         <div className="w-full p-5 md:text-2xl sm:text-xl max-h-full lado-esquerdo items-center">
           <Animation />
           <p className="text-xl md:text-xl max-w-[800px] md:max-w-[fit] mt-2 opacity-60">
-              <strong className="title-sobre text-[#D3E97A] opacity-100 text-[30px]">
+              <strong className="title-sobre text-[#D3E97A] opacity-100 md:text-[30px] sm:text-[24px]" style={{fontFamily: "cursive", fontWeight:"bold"}}>
                 Desenvolvedor Front-End | React
               </strong>
             {" "}

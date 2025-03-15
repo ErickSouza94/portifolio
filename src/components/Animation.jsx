@@ -12,7 +12,8 @@ const Animation = () => {
       wrapper="h1"
       speed={50}
       repeat={Infinity}
-      style={{ whiteSpace: "pre-wrap" }} 
+      style={{ whiteSpace: "pre-wrap", fontFamily: "cursive", fontWeight:"bolder" }}
+     
     />
   );
 };
