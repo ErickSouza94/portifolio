@@ -26,7 +26,7 @@ const ProjectCard = ({
           <p className="text-xl">Ano: {year}</p>
           <p className="text-xl">Função: {role}</p>
         </div>
-        <div className="mt-4 flex gap-5 text-2xl ">
+        <div className="mt-4 flex gap-5 text-xl ">
           <a
             href={linkProject}
             target="_blank"

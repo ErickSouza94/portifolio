@@ -27,9 +27,9 @@ const Tools = () => {
             <img src={jquery} alt="" className="md:w-[17%] h-[10%] max-w-[24%] sm:w-[20%] hover:scale-110 rounded-t-xl"/>
             <img src={react} alt="" className="md:w-[16%] h-[10%] max-w-[24%] sm:w-[20%] hover:scale-110 rounded-t-xl"/>
             <img src={next} alt="" className="md:w-[15%] h-[10%] max-w-[18%] sm:w-[10%] hover:scale-110 rounded-t-xl bg-white p-1"/>
-            <img src={node} alt="" className="md:w-[20%] :h-[10%] min-w-[15%] sm:w-[20%] hover:scale-110 rounded-t-xl"/>
-            <img src={mongo} alt="" className="md:w-[20%] :h-[10%] min-w-[15%] sm:w-[20%] hover:scale-110 rounded-t-xl"/>
-            <img src={express} alt="" className="md:w-[20%] :h-[10%] min-w-[15%] sm:w-[20%] hover:scale-110 rounded-t-xl"/>
+            <img src={node} alt="" className="md:w-[20%] :h-[10%] max-w-[24%] min-w-[20%] sm:w-[14%] hover:scale-110 rounded-t-xl"/>
+            <img src={mongo} alt="" className="md:w-[20%] :h-[10%] max-w-[24%] min-w-[20%] sm:w-[14%] hover:scale-110 rounded-t-xl"/>
+            <img src={express} alt="" className="md:w-[20%] :h-[10%] max-w-[24%] min-w-[20%] sm:w-[14%] hover:scale-110 rounded-t-xl"/>
           </div>
   )
 }
