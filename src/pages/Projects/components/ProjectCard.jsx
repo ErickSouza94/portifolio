@@ -24,7 +24,9 @@ const ProjectCard = ({
         <p className="text-xl mt-2 opacity-60">{description}</p>
         <div className="mt-4 text-lg">
           <h3 className="font-semibold text-xl">Informações do projeto</h3>
-          <p className="text-xl mt-2 mb-2 opacity-60">Ferramentas Utilizadas: {tools}</p>
+          <p className="text-xl mt-2 mb-2 opacity-60">
+            Ferramentas Utilizadas: {tools}
+          </p>
           <p className="text-xl">Ano: {year}</p>
           <p className="text-xl">Função: {role}</p>
         </div>
