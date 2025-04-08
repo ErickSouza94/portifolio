@@ -13,7 +13,7 @@ const projects = [
         "@prisma/client: ^6.2.1 | ",
         "Tailwind CSS: ^3.4.1 | ",
         "TypeScript: ^5 | ",
-        "ts-node: ^10.9.2"      
+        "ts-node: ^10.9.2 | "      
     ],
     image: "/mc-donalds.png",
     year: "2025",
@@ -57,14 +57,20 @@ const projects = [
     githubLink: "https://github.com/ErickSouza94/nossos-filmes",
   },
   {
-    title: "Finans",
+    title: "To do List",
     description:
-      "Uma landing page para site de finanças. Utilizando HTML e CSS.",
-    image: "/finans.png",
-    year: "2024",
+      "A aplicação é uma lista de tarefas simples, onde os usuários podem adicionar, editar e remover tarefas. Projeto feito em React.",
+    tools: [
+        "React: ^18.3.1 | ",
+        "React-dom: ^18.3.1 | ",
+        "React-icons: ^5.4.0 | ",
+        "Json-server: ^1.0.0-beta.3 | "
+    ],
+    image: "/todo.png",
+    year: "2025",
     role: "front-end",
-    linkProject: "https://ericksouza94.github.io/projeto-finans/",
-    githubLink: "https://github.com/ErickSouza94/projeto-finans",
+    linkProject: "https://projeto-todolist-rouge.vercel.app",
+    githubLink: "https://github.com/ErickSouza94/projeto-todolist",
   },
 ];
 
