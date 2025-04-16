@@ -49,6 +49,7 @@ const projects = [
         "react-dom: ^18.3.1 | ",
         "react-icons: ^5.4.0 | ",
         "react-router-dom: ^7.1.4 | ",
+        "The Movie Database (TMDB) API",
       ],
     image: "/nossos-filmes.png",
     year: "2025",
