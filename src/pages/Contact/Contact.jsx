@@ -44,7 +44,7 @@ const Contact = () => {
           erick.ssouza94@gmail.com
         </h3>
         <h3 className="flex flex-row items-center justify-items-start gap-5">
-          <FaWhatsapp /> +55 (21)969096183
+          <FaWhatsapp /> +351 932874684
         </h3>
 
         <div className="mapa flex flex-col justify-items-center text-center">
