@@ -23,11 +23,7 @@ const Home = () => {
               </strong>
             {" "}
             <br />
-            Sou um desenvolvedor front-end apaixonado por criar interfaces
-            modernas, intuitivas e responsivas. Especializado em React, Tailwind
-            e JavaScript, foco na experiência do usuário e no desenvolvimento
-            mobile-first. Sempre em busca de aprendizado contínuo e boas
-            práticas para entregar soluções eficientes e acessíveis.
+             Sou um profissional de tecnologia e educação apaixonado por criar interfaces modernas, intuitivas e responsivas. Com experiência em projetos de robótica, metodologia STEAM, programação e Inteligência Artificial na educação, aplico princípios de desenvolvimento front-end em React, Tailwind e JavaScript para entregar soluções mobile-first, acessíveis e envolventes. Sempre busco aprendizado contínuo e boas práticas para transformar ideias em experiências digitais que conectam pessoas e conhecimento.
           </p>
           <div>
             <Tools />
