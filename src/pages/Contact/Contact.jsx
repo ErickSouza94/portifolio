@@ -37,7 +37,7 @@ const Contact = () => {
         <h1 className="flex justify-center items-center">Contato</h1>
         <h3 className="flex flex-row items-center gap-5">
           <GrMap />
-          Leiria, Portugal
+          Marinha Grande - Leiria, Portugal
         </h3>
         <h3 className="flex flex-row items-center justify-items-start gap-5">
           <MdEmail />
