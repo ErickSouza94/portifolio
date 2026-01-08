@@ -3,7 +3,7 @@ import "leaflet/dist/leaflet.css";
 
 
 const CustomMarkerMap = () => {
-  const position = [39.75, -8.8];
+  const position = [39.750868, -8.933614];
   return (
     <div>
       <MapContainer
