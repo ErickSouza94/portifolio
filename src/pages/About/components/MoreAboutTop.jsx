@@ -14,14 +14,11 @@ const MoreAboutTop = () => {
         />
         <div className="buttons hidden md:flex justify-center pt-10 gap-5 items-center ">
           <button
-            className="py-2 w-fit px-10 border-1 rounded-xl bg-[#D3E97A] text-black font-semibold
+            className="py-2 w-fit px-10 border rounded-xl bg-[#D3E97A] text-black font-semibold
                     hover:bg-white transition-colors duration-300 cursor-pointer
                     transform hover:scale-105 text-[20px] whitespace-nowrap"
           >
-            <a
-              href="/erick-dev-europass.pdf"
-              download={"Erick_Souza_Dev_Resume.pdf"}
-            >
+            <a href="/cv-erick-tech.pdf" download={"cv-erick-tech.pdf"}>
               <span className="flex w-full items-center justify-between gap-5">
                 {" "}
                 Download CV
