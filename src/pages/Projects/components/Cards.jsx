@@ -2,6 +2,22 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "DM-Imoveis",
+    description:
+      "O sistema funciona como um SPA (Single Page Application), onde o usuário pode navegar por destaques na página inicial e acessar um catálogo completo de imóveis. O grande diferencial implementado é a integração dinâmica via URL, que permite que um imóvel seja compartilhado por um link direto e abra automaticamente o modal de detalhes com galeria de fotos e vídeos. Além de integração com Whatsapp para contato diretamente com a empresa.",
+    tools: [
+      "React: ^19.2.0 | ",
+      "React-dom: ^19.2.0 | ",
+      "Swiper: ^12.0.3",
+      "Material UI: ^5+",
+    ],
+    image: "/dm-imoveis.png",
+    year: "2026",
+    role: "front-end",
+    linkProject: "https://dm-imoveis-eta.vercel.app",
+    githubLink: "https://github.com/ErickSouza94/dm-imoveis",
+  },
+  {
     title: "Mc-Donalds",
     description: `A aplicação foi desenvolvida com React, Next.ts e TypeScript, utilizando o Tailwind CSS para estilização. O projeto é uma simulação de um sistema de autoatendimento, onde o usuário pode navegar pelo cardápio, adicionar itens ao carrinho e finalizar o pedido.  `,
     tools: [
@@ -55,22 +71,6 @@ const projects = [
     role: "front-end",
     linkProject: "https://nossos-filmes-one.vercel.app",
     githubLink: "https://github.com/ErickSouza94/nossos-filmes",
-  },
-  {
-    title: "DM-Imoveis",
-    description:
-      "O sistema funciona como um SPA (Single Page Application), onde o usuário pode navegar por destaques na página inicial e acessar um catálogo completo de imóveis. O grande diferencial implementado é a integração dinâmica via URL, que permite que um imóvel seja compartilhado por um link direto e abra automaticamente o modal de detalhes com galeria de fotos e vídeos. Além de integração com Whatsapp para contato diretamente com a empresa.",
-    tools: [
-      "React: ^19.2.0 | ",
-      "React-dom: ^19.2.0 | ",
-      "Swiper: ^12.0.3",
-      "Material UI: ^5+",
-    ],
-    image: "/dm-imoveis.png",
-    year: "2026",
-    role: "front-end",
-    linkProject: "https://dm-imoveis-eta.vercel.app",
-    githubLink: "https://github.com/ErickSouza94/dm-imoveis",
   },
 ];
 
