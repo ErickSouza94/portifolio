@@ -69,7 +69,7 @@ const projects = [
     image: "/dm-imoveis.png",
     year: "2026",
     role: "front-end",
-    linkProject: "dm-imoveis-eta.vercel.app",
+    linkProject: "https://dm-imoveis-eta.vercel.app",
     githubLink: "https://github.com/ErickSouza94/dm-imoveis",
   },
 ];
