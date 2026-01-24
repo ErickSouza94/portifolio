@@ -21,10 +21,10 @@ const Connect = () => {
           </a>
         </p>
         <p className="text-lg">
-          Para mais informações sobre meu currículo, {" "}
+          Para mais informações sobre meu currículo,{" "}
           <a
             href="/erick-dev-europass.pdf"
-            download={"Erick_Souza_Dev_Resume.pdf"}
+            download={"cv-erick-tech.pdf"}
             className="hover:text-blue-700 animate-pulse"
           >
             clique aqui
