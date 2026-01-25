@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { GrMap } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
@@ -18,19 +17,45 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Formulário enviado com sucesso!");
 
-    //Resetar o formulário
-    setFormData((prevState) => ({
-      ...prevState,
-      name: "",
-      email: "",
-      assunto: "",
-      mensagem: "",
-    }));
+    const data = {
+      ...formData,
+      access_key: "79e89598-119b-4db1-bed3-f8df8b88b126", // Key para o web3forms
+    };
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Mensagem enviada com sucesso!");
+
+        // 2. Reseta o formulário apenas se tiver sucesso
+        setFormData({
+          name: "",
+          email: "",
+          assunto: "",
+          mensagem: "",
+        });
+      } else {
+        alert("Erro ao enviar: " + result.message);
+      }
+      // eslint-disable-next-line no-unused-vars
+    } catch (error) {
+      alert("Erro na conexão com o servidor de e-mail.");
+    }
   };
+
   return (
     <div className="flex flex-col justify-around items-center text-2xl gap-10 xl:flex-row md:gap-4 p-4">
       <div className="contato flex flex-col gap-10 ">
@@ -58,7 +83,7 @@ const Contact = () => {
           className="border border-[#1a1a1a] rounded-xl p-2 w-full sm:w-full"
         >
           <div>
-            <label htmlFor="name" className="w-full h-[26px]  text-[20px]">
+            <label htmlFor="name" className="w-full h-[26px] text-[20px]">
               Nome:
             </label>
             <div>
@@ -66,12 +91,14 @@ const Contact = () => {
                 type="text"
                 name="name"
                 placeholder="Seu nome"
-                value={formData.nome}
+                value={formData.name}
                 onChange={handleChange}
-                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-xl"
+                required
+                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-xl text-white"
               />
             </div>
           </div>
+
           <div className="pt-4">
             <label htmlFor="email" className="w-full h-[26px] text-[20px]">
               Email:
@@ -83,10 +110,12 @@ const Contact = () => {
                 placeholder="Seu email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-2xl"
+                required
+                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-2xl text-white"
               />
             </div>
           </div>
+
           <div className="pt-4">
             <label
               htmlFor="assunto"
@@ -101,10 +130,11 @@ const Contact = () => {
                 placeholder="Assunto"
                 value={formData.assunto}
                 onChange={handleChange}
-                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-2xl"
+                className="w-full h-[50px] bg-[#1A1A1A] p-4 rounded-2xl text-white"
               />
             </div>
           </div>
+
           <div className="pt-4">
             <label htmlFor="mensagem" className="w-full h-[26px] text-[20px]">
               Mensagem:
@@ -115,13 +145,15 @@ const Contact = () => {
                 placeholder="Mensagem"
                 value={formData.mensagem}
                 onChange={handleChange}
-                className="w-full h-[400px] bg-[#1A1A1A] p-4 rounded-2xl "
+                required
+                className="w-full h-[400px] bg-[#1A1A1A] p-4 rounded-2xl text-white"
               ></textarea>
             </div>
           </div>
+
           <button
             type="submit"
-            className="text-white w-full font-semibold rounded-xl p-3 hover:bg-[#1A1A1A] transition-colors duration-300 cursor-pointer transform hover:scale-105"
+            className="text-white w-full font-semibold rounded-xl p-3 bg-[#1a1a1a] hover:bg-[#333] transition-colors duration-300 cursor-pointer transform hover:scale-105"
           >
             Enviar
           </button>
