@@ -31,14 +31,14 @@ const MoreAboutTop = () => {
             target="_blank"
             className="hover:scale-150 transition duration-300 "
           >
-            <FaLinkedinIn className="text-[#D3E97A] bg-black w-[20px] h-[25px]" />
+            <FaLinkedinIn className="text-[#D3E97A] bg-black w-5 h-[25px]" />
           </a>
           <a
             href="https://github.com/ErickSouza94"
             target="_blank"
             className="hover:scale-150 transition duration-300"
           >
-            <FaGithub className="text-[#D3E97A] bg-black w-[20px] h-[25px]" />
+            <FaGithub className="text-[#D3E97A] bg-black w-5 h-[25px]" />
           </a>
         </div>
       </div>
