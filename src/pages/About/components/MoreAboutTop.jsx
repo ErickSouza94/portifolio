@@ -22,7 +22,7 @@ const MoreAboutTop = () => {
               <span className="flex w-full items-center justify-between gap-5">
                 {" "}
                 Download CV
-                <div className="w-[8px] bg-black rounded-full h-2" />
+                <div className="w-2 bg-black rounded-full h-2" />
               </span>
             </a>
           </button>
